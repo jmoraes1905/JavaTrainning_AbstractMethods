@@ -13,6 +13,7 @@ public abstract class Shape {
 	
 	public Shape(String name, Color color) {
 		super();
+		this.name = name;
 		this.color = color;
 	}
 

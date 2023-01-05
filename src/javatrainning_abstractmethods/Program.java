@@ -33,19 +33,21 @@ public class Program {
 				double width = sc.nextDouble();
 				System.out.println("Enter rectangle height:");
 				double height = sc.nextDouble();
-				shapes.add(new Rectangle("Rectangle",color, width, height));
+				String name = "Rectangle";
+				shapes.add(new Rectangle(name,color, width, height));
 			}
 			
 			else if(c == 'c') {
 				System.out.println("Enter circle radius:");
 				double radius = sc.nextDouble();
-				shapes.add(new Circle("Circle",color, radius));
+				String name = "Circle";
+				shapes.add(new Circle(name,color, radius));
 			}
 		}
 		
-		System.out.println("Sahpes:");
+		System.out.println("Shapes:");
 		for(Shape sh : shapes) {
-			System.out.println("Shape: "+ sh.getName()+ "Color: "+ sh.getColor()+" " + "Area: "+ String.format("%.2f",sh.area()));
+			System.out.println("Shape: "+ sh.getName() + " "+ "Color: "+ sh.getColor()+" " + "Area: "+ String.format("%.2f",sh.area()));
 		}
 	}
 
